@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import classes from "./App.css";
+import Body from '../src/containers/body/body';
+import {BrowserRouter} from 'react-router-dom';
+import Loader from './components/extra/loader';
+class App extends React.Component {
+  state = {
+    loader : true
+  }
+  componentDidMount(){
+    setTimeout(() => {
+      this.setState({
+        loader : false
+      })
+    },1000)
+   
+  }
+  render() {
+    let block = this.state.loader ? <Loader /> : (
+      <BrowserRouter>
+        <Body />
+      </BrowserRouter>
+    )
+    return block;
+  }
 }
 
 export default App;
