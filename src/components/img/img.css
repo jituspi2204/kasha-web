@@ -1,0 +1,28 @@
+.self{
+    width: inherit;
+}
+
+.userImg{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    
+}
+.userImg > a:hover{
+    border: none;
+}
+.userImg img{
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+.userImg:hover img{
+    transform: scale(1.8);
+}
+.userImg > div{
+    display: none;
+}
+
+.userImg img{
+    width: 4rem;
+    height: 4rem;
+}

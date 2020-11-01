@@ -1,0 +1,76 @@
+.self{
+    width: 45%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.self > *{
+    margin-right: 1rem;
+}
+.self a{
+    height: auto;
+    width: auto;
+}
+.self a:hover{
+    border : none;
+}
+.self  div:hover{
+   transform: scale(1.1); 
+}
+
+.displayList:hover > div{
+    width: 30rem;
+    position: fixed;
+    display: block;
+    top:8.3rem;
+    right: 4rem;
+    z-index: 2000;
+}
+.displayList:hover  button:hover{
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+}
+
+.self button{
+    padding: 1rem 0.5rem;
+}
+
+.self button >a{
+    margin: 0px;
+    padding: 0px 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.self button > svg{
+    height: 1.8rem;
+    width: 1.8rem;
+    padding-top: 4px;
+}
+.self button > svg > use{
+    fill: rgb(255, 255, 255);
+}
+
+@media screen and (max-width : 840px){
+    .self{
+        padding: 0;
+        margin: 0;
+        align-self: center;
+    }
+    .self button{
+        margin: 0  0 2rem 0;
+        width: 100%;
+    }
+    .self button a{
+        font-size: 1.4rem;
+    }
+    .displayTop{
+       margin-right: 44%;
+       margin-bottom: 5rem;
+    }
+    .displayTop img{
+        width: 6rem;
+        height: 6rem;
+    }
+}

@@ -1,0 +1,123 @@
+.self{
+    margin-left: 20%;
+    width: 60%;
+    height: auto;
+}
+.self textarea{
+    height: 15rem;
+    width: 100%;
+    outline: none;
+    font-size: 1.8rem;
+}
+.self button{
+    margin-top: 2rem;
+}
+.self > h1{
+    margin-bottom: 2rem;
+}
+.hotelReviewBox{
+    width: 100%;
+    height: 40vh;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+    box-shadow: 5px 5px 10px rgb(165, 161, 161);
+}
+.hotelReviewBox svg{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+.hotelReviewBox > h1{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.content{
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+.content > h1{
+    font-size: 4rem;
+    margin: 0;
+}
+.content > h2{
+    display: inline-block;
+    margin-left: 2rem;
+}
+.ratingBox{
+    padding: 1rem;
+    width: 40%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgb(226, 221, 221);
+}
+.bars{
+    width: 100%;
+    height: 1.5rem;
+    position: relative;
+    background: rgb(221, 217, 217);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+.bars::after{
+}
+.bars svg{
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    top: -0.5rem;
+    left: -6rem;
+}
+.bars svg > use{
+    fill: rgb(136, 136, 136);
+}
+.bars h3{
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: -3rem;
+}
+.bars h2{
+    display: block;
+    position: absolute;
+    top: -1.5rem;
+    left: -7.5rem;
+    
+}
+.backBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+@media screen and (max-width : 1000px){
+    .self{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width : 540px){
+    .hotelReviewBox{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .hotelReviewBox > *{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+    }
+    .ratingBox{
+        align-self: flex-end;
+    }
+}

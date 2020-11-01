@@ -1,0 +1,8 @@
+.self{
+    grid-row: 1/2;
+    grid-column: 1/13;
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 10rem;
+    padding: 0; 
+}

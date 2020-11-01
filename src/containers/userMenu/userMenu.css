@@ -1,0 +1,30 @@
+.self{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.self ul{
+    padding: 0;
+}
+.self > ul > a{
+    width: 100%;
+}
+.self > ul > a:hover{
+    border: none;
+}
+.self > ul button{
+    width: 100%;
+    height: 5rem;
+    margin-bottom: 1px;
+}
+.self > div  input{
+    width: 100%;
+}
+.self > div button{
+    width: 100%;
+}
+.self > div {
+    margin: 0;
+    padding: 0;
+}

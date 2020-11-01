@@ -1,0 +1,66 @@
+.self{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.self > input{
+    width: 100%;
+    height: 4rem;
+    padding-left: 2rem;
+    border: 1px solid rgb(168, 28, 28);
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow:5px 5px 10px rgb(201, 201, 201);
+}
+.self > input:focus{
+    outline : none;
+}
+.self > ul{
+    z-index: 100;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
+    min-height: 0;
+    max-height: 40vh;
+    padding: 0rem 1rem;
+    font-size: 1.4rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+    background-color: rgb(238, 236, 236);
+}
+.self > ul::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: beige;
+}
+.self > ul::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background-color:#777;
+}
+
+.self > ul > li{
+    width: 100%;
+    height: 4rem;
+    display: inline-block;
+    text-align: center;
+   background-color: rgb(255, 255, 255);
+    margin-bottom: 1px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: #111;
+    box-shadow: 2px 2px 10px #777;
+    font-size: 1.4rem;
+}
+.self > ul > li:hover{
+    transform: scale(1.05);
+}
+/* .self > input:focus ~ ul{
+    display: block;
+} */

@@ -1,0 +1,409 @@
+.self {
+  width: 100%;
+  min-height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, min-content);
+  grid-gap: 0.5rem;
+  padding: 1rem;
+  font-weight: 400;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 30px rgb(184, 176, 176);
+  margin-bottom: 5vh;
+  border-radius: 0.5rem;
+}
+.self > * {
+    letter-spacing: 1px;
+    font-weight: 100;
+  height: auto;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  
+}
+.self h1 ,.self h2, .self h3{
+    display: block;
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+}
+.self h1{
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.self h2{
+    font-weight: 550;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.self p{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-align: left;
+}
+.coverPhoto {
+    height: 100%;
+    width: auto;
+  grid-column: 1/7;
+  grid-row: 1/6;
+  
+}
+
+/* .mapClass{
+    width: 100%;
+    height: 100%;
+    grid-column: 1/6;
+    grid-row: 4/6;
+} */
+.self > * > img{
+   height: 12vh;
+   width: 100%;
+}
+.coverPhoto > img{
+    width: 100%;
+   height: 65vh;
+}
+.photoOne {
+  grid-column: 7/9;
+  grid-row: 1/2;
+  height:100%;
+  width: 100%;
+}
+.photoTwo {
+  grid-column: 7/9;
+  grid-row: 2/3;
+  height:100%;
+  width : 100%;
+}
+.photoThree {
+  grid-column: 7/9;
+  grid-row: 3/4;
+  height:100%;
+  width : 100%
+}
+.photoFour {
+  grid-column: 7/9;
+  grid-row: 4/5;
+  height:100%;
+  width : 100%
+}
+.photoFive {
+  grid-column: 7/9;
+  grid-row: 5/6;
+  height:100%;
+  width : 100%;
+}
+.details{
+    grid-column: 9/13;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+.details > div > h1{
+    margin-bottom: 1rem;
+}
+.service{
+    width: 100%;
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.service > li{
+    flex-grow: 1;
+    list-style-type: none;
+    border : 1px solid rgb(255, 145, 0);
+    padding: 0.3rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    border-radius: 0.3rem;
+}
+.price {
+  /* grid-column: 8/13; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.price  h1{
+    margin-right: 1rem;
+}
+.assets{
+    display: block;
+    width: 100%;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3px;
+    
+}
+.rating h2:first-child{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    border-radius: 5%;
+    color: #fff;
+    margin-right: 2rem;
+}
+.rating1{
+    background-color: rgb(255, 0, 0);
+}
+.rating2{
+    background-color: rgb(255, 115, 0);
+}
+.rating1{
+    background-color: rgb(255, 217, 0);
+}
+.rating1{
+    background-color: rgb(43, 184, 85);
+}
+.rating svg{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 2rem;
+}
+.rating use{
+    fill: #fff;
+}
+.buttons{
+    width: 100%;
+    padding: auto;
+    grid-column: 9/13;
+    grid-row: 5/6;
+    align-items: flex-end;
+}
+.propertyName{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+}
+.propertyName > *{
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    width: 100%;
+    justify-content: flex-start;
+}
+.price > *{
+    margin-right: 1rem;
+}
+.amount{
+    color: rgb(0, 196, 59);
+}
+.realAmount{
+    color: rgb(207, 0, 0);
+}
+.discount{
+    color: rgb(255, 72, 0);
+}
+.tag{
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.tag svg{
+    height: 2rem;
+    width: 3rem;  
+}
+.tag use{
+    fill: rgb(255, 145, 0);
+}
+
+
+.displayCard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20rem;
+    width: 100%;
+    border: 2px solid rgb(255, 145, 0);
+    border-radius: 4px;
+    text-align: center;
+    padding: 0;
+}
+.displayCard div > h2 {
+    font-size: 1.7rem;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.displayImage {
+    width: auto;
+    height: 30vh;
+}
+.displayImage >img{
+    width: auto;
+    height: 30vh;
+}
+.cityName{
+    width: 100%;
+}
+.priceRange{
+    width: 100%;
+}
+.priceRange svg{
+    width: 2rem;
+    height: 2rem;
+}
+.displayCard > a{
+    justify-self: flex-end;
+    height: 5rem;
+}
+.displayCard > a:hover{
+    border: none;
+}
+@media screen and (max-width : 1100px){
+    .coverPhoto{
+        grid-column: 1/10;
+        grid-row: 1/3;
+    }
+    .coverPhoto > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoOne{
+        grid-column: 10/13;
+        grid-row: 1/2;
+    }
+    .photoOne > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoTwo{
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+    .photoTwo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoThree{
+        grid-column: 10/13;
+        grid-row: 3/4;
+    }
+    .photoThree > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoFour{
+        grid-column: 10/13;
+        grid-row: 4/5;
+    }
+    .photoFour > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoFive{
+        grid-column: 10/13;
+        grid-row: 5/6;
+    }
+    .photoFive > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .details{
+        grid-column: 1/10;
+        grid-row: 3/5;
+        padding: 0;
+        margin: 0;
+    }
+    .buttons{
+        grid-column: 1/10;
+        grid-row: 5/6;
+    }
+}
+@media screen and (max-width : 840px){
+    .self{
+      grid-column: 1/13;
+      grid-auto-rows: min-content;
+      grid-gap: 2px;
+    }
+    .self h2{
+        font-size: 1.3rem !important;
+    }
+    .self h1{
+        font-size: 1.4rem;
+    }
+    .coverPhoto{
+        grid-column: 1/10;
+        grid-row: 1/3;
+        padding: 0;
+    }
+    .coverPhoto > img{
+        width: 100%;
+        height: auto;
+    }
+    .photoOne{
+        grid-column: 10/13;
+        grid-row: 1/2;
+    }
+    .photoOne > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoTwo{
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+    .photoTwo > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoThree{
+        grid-column: 10/13;
+        grid-row: 3/4;
+    }
+    .photoThree > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoFour{
+        grid-column: 10/13;
+        grid-row: 4/5;
+    }
+    .photoFour > img{
+        width: 100%;
+        height: 100%;
+    }
+    .photoFive{
+        grid-column: 10/13;
+        grid-row: 5/6;
+    }
+    .photoFive > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .service {
+        width: 100%;
+        height: auto;
+    }
+  }

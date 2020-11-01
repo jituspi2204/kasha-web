@@ -1,0 +1,176 @@
+.self {
+  width: 40%;
+  height: 80vh;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.self > a{
+  width: 50%;
+  height: auto;
+  margin: 0;
+  padding: 0 ;
+}
+.self > a:hover{
+  border: none;
+}
+.self img {
+  width: 100%;
+  display: inline-block;
+}
+.self > h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 115, 0),
+    rgb(255, 187, 0)
+  );
+  background-clip: text;
+  color: transparent;
+}
+.self > h2 {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 3rem;
+  color: #fff;
+  width: 70%;
+  text-align: center;
+}
+.self > h3 {
+  display: inline-block;
+  width: 70%;
+  font-weight: 800;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.selfB {
+  margin-left: 30%;
+  width: 100%;
+  height: 80vh;
+  padding: 3rem 3rem 0rem 3rem;
+  background: #fff;
+  letter-spacing: 1px;
+  position: relative;
+  box-shadow: 2px 2px 2px rgb(211, 205, 205);
+
+}
+.selfB button{
+  margin-bottom: 2rem;
+}
+.field {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.field > input {
+  padding-left: 5rem;
+  box-shadow: 4px 4px 10px rgb(211, 205, 205);
+}
+.field > input:focus:valid{
+    border-bottom: 2px solid rgb(4, 165, 31);
+}
+.field > input:focus:invalid{
+    border-bottom: 2px solid rgb(255, 1, 1);
+}
+.icon {
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.selfB > select {
+  padding-left: 5rem;
+  height: 4rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  outline-color: red;
+  margin-bottom: 2rem;
+}
+.selfB > select > option {
+  display: block;
+  outline: 1px solid red;
+  font-size: 1.6rem;
+  padding: 3px;
+  outline-color: red;
+}
+.selfB > a:link,
+.selfB > a:visited{
+    display: block;
+    color: rgb(0, 81, 255);
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.selfB > a:hover{
+    border-bottom: none;
+}
+
+.google > input{
+    background-color: rgb(240, 52, 52);
+    color : #fff;
+}
+.google > svg{
+    fill: #fff;
+    left: 30%;
+}
+.userType{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.userType h2{
+  width: 30%;
+  
+}
+.userType > *{
+  display: inline-block;
+}
+.userType > div{
+  width: 6.5rem;
+  height: auto;
+}
+
+@media screen and (max-width : 840px){
+  .self{
+    padding-top: 5rem;
+    width: 40%;
+    
+  }
+  .self h1{
+    font-size: 1.6rem;
+  }
+  .self h2{
+    font-size: 1.5rem;
+  }
+  .selfB{
+    height: auto;
+  }
+}
+
+@media screen and (max-width : 520px){
+  .self{
+    order: 2;
+    align-self: center
+  }
+  .self h1{
+    width: 100%;
+  }
+  .self h2{
+    width: 100%;
+  }
+  .selfB{
+    margin: 0;
+    height: auto;
+  }
+}

@@ -1,0 +1,16 @@
+.self{
+    width: 8rem;
+    margin-left: 2rem;
+}
+.self > a{
+    width: 100%;
+    height: auto;
+}
+.self > a:hover{
+    border: none;
+}
+@media screen and (max-width : 540px){
+    .self{
+        width: 6rem;
+    } 
+}

@@ -1,0 +1,23 @@
+.self{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container{
+    width: 80%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width:540px){
+    .container{
+        width: 95%;
+    }
+}

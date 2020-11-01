@@ -1,0 +1,20 @@
+.self{
+    grid-column: 1/13;
+    grid-row: 3/4;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    box-shadow: 5px 5px 20px #777;
+    margin-top: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+@media screen and (max-width : 840px){
+   
+  }
+  @media screen and (max-width : 540px){
+
+  }
+  @media screen and (max-width : 420px){
+    
+  }

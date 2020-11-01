@@ -1,0 +1,55 @@
+.self{
+    padding: 10rem 20rem;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(150, 148, 148, 0.7) ,
+        rgba(73, 73, 73, 0.7) 
+      ),
+    url(../../assets/img/bg-4.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+}
+.form{
+  width: 40%;
+  height: auto;
+}
+
+@media screen and (max-width : 1100px){
+  .self{
+    padding: 5rem 10rem;
+  }
+  .form{
+    width: 35rem;
+  }
+}
+@media screen and (max-width : 840px){
+  .self{
+    padding : 5rem 1rem;
+    height: auto;
+    background-size: cover;
+  }
+  .form{
+    padding: 1rem;
+    width: 30rem;
+    margin-left: -8rem;
+  }
+}
+@media screen and (max-width : 520px){
+  .self{
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+    padding: 5rem 0 1rem 0;
+    align-items: center;
+    background-size: cover;
+  }
+  .form{
+    width: 35rem;
+    margin: 0;
+    height: auto;
+  }
+}

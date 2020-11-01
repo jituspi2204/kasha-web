@@ -1,0 +1,186 @@
+.self{
+    position: fixed;
+    top: 0;
+    left: 40%;
+    width: 30rem;
+    min-height: 8rem;
+    animation: fade 5s ease-out 0s 1;
+    animation-fill-mode: backwards;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   padding: 1rem;
+   align-items: center;
+   opacity: 0;
+   visibility: hidden;
+   border-radius: 4px;
+   z-index: 2000;
+}
+.red{
+    background-color: rgb(194, 0, 0);
+    color: white;
+}
+.green{
+    background-color: rgb(55, 173, 0);
+    color: white;
+}
+.self > img{
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    text-align: center;
+}
+.self > h2{
+    display: inline-block;
+}
+@keyframes fade{
+    0%{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,-200%);
+    }
+    10%{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,0);
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.selfA{
+    padding: 10rem 20rem;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(150, 148, 148, 0.7) ,
+        rgba(73, 73, 73, 0.7) 
+      ),
+    url(../img/bg-4.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right > img{
+    height: 12rem;
+    width: 12rem;
+}
+.right > h2{
+    font-size: 2rem;
+    color: white;
+}
+.noData{
+    width: 40%;
+    height: 40%;
+    margin-left: 30%;
+    background-image: url(../img//nodata.png);
+    background-size: cover;
+    background-position: top;
+}
+.pageNotFound{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/bg-1.jpg);
+    background-size: cover;
+}
+.pageNotFound > div{
+    height: 60vh;
+    text-align: center;
+}
+.pageNotFound > div:last-child h1{
+    font-size: 6.5rem;
+}
+.pageNotFound h1{
+    padding: 0;
+    margin: 0;
+}
+.pageNotFound h2{
+    padding: 0;
+    margin: 0;
+}
+.pageNotFound > div:last-child h3{
+    font-size: 3rem;
+}
+.self > svg{
+    width: 100%;
+    height: 100%;
+    animation: rotate 0.5s 0s infinite;
+}
+.self svg > use{
+    fill: rgb(255, 166, 0);
+}
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.checked{
+    border-radius: 2.5rem;
+}
+.right a {
+    height: 5rem;
+}
+.right a:hover{
+    border: none;
+}
+@media screen and (max-width : 1100px){
+    .right{
+        width: 60%;
+    }
+}
+@media screen and (max-width : 840px){
+    .selfA{
+        justify-content: space-between;
+        width: 100%;
+        padding: 10rem 5rem;
+    }
+    .right{
+        width: 70%;
+    }
+    .self{
+        width: 100%;
+        left: 0;
+    }
+}
+@media screen and (max-width :540px){
+    .selfA{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .pageNotFound{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .right{
+        align-self: center;
+    }
+}

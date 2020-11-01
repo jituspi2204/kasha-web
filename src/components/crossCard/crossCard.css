@@ -1,0 +1,71 @@
+.backgroundBox{
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1999;
+    background: rgba(1,1,1,0.5);
+}
+
+.self{
+    padding: 4rem 4rem;
+    margin: 0;
+    position: fixed;
+    top: 10vh;
+    left: 10%;
+    width: 80%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 2000;
+    background:#fff;
+}
+.crossIcon {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 11vh;
+    right: 11%;
+    
+}
+.crossIcon svg{
+    height: 3rem;
+    width: 3rem;
+    fill: #111;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+
+}
+.reviewBox{
+    width:25%;
+    flex-grow: 1;
+    height: 30rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    text-align: justify;
+    margin-right: 1rem;
+}
+
+.reviewBox > div{
+    height: 30rem;
+}
+
+@media screen and (max-width : 840px){
+    .reviewBox{
+        width:50%;
+        flex-grow: 1;
+        height: 30rem;
+        margin-bottom: 3rem;
+    }
+}

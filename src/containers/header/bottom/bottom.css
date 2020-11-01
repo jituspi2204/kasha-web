@@ -1,0 +1,190 @@
+.self {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding: 4rem 4rem 0 4rem;
+  background-size: cover;
+  margin: 15rem 0rem 0 0rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items:center;
+  flex-wrap: wrap;
+}
+.headings{
+  width: auto;
+  height: 10rem;
+  /* background: red; */
+  margin-bottom: 5rem;
+}
+.headings img{
+  width: 100%;
+  height: 100%;
+}
+.headings h1 , .headings h3{
+  width: 100% !important;
+  text-align: center !important;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #fff;
+  background: linear-gradient(to right , #fc791c , #f0c62e);
+  border-radius: 10rem;
+  padding: 1rem;
+}
+.content > a{
+  color: white;
+}
+.content > a:hover{
+  border: none;
+}
+.topCity{
+  width: 9rem;
+  height: auto;
+  padding: 2rem 0.5rem;
+  
+}
+.topCity:hover{
+  transform: scale(1.02);
+}
+.cityImage{
+  width: 8rem;
+  height: 8rem;
+  border-radius:2rem;
+  box-shadow: 1px 1px 1px #fff;
+}
+.cityImage > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+.topCity > h5{
+  font-size: 1.4rem;
+  padding: 2px 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+}
+.hOne {
+  width: 100%;
+  font-size: 3rem;
+  text-align: left;
+}
+.hOne > span {
+  background: linear-gradient(
+    to right bottom,
+    rgb(255, 145, 0),
+    rgb(255, 187, 0)
+  );
+  padding: 1rem;
+  box-decoration-break: clone;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.hTwo {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+}
+.self h3{
+  font-size: 2rem;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+
+.self  h4{
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.content h2{
+  font-size: 3rem;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+.content button{
+  margin-top: 4rem;
+}
+.searchBox {
+  width: 100%;
+  margin-top: 2rem;
+}
+@media screen and (max-width : 1100px){
+  .self{
+    margin-top: 8rem;
+  }
+  .topCity {
+    width: 7rem;
+  }
+  .cityImage{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+  }
+  .cityImage> img{
+    border-radius: 1rem;
+  }
+  .topCity > h5{
+    font-size: 1rem;
+    padding-right: 0.6rem;
+  }
+}
+
+
+@media screen and (max-width : 840px){
+  .self{
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+  .content{
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width : 540px){
+  .self{
+    flex-direction: column;
+    margin-top: 12rem;
+  }
+  .content{
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .topCity {
+    margin-top: 1vh;
+    width: 6rem;
+  }
+  .cityImage{
+    width: 4rem;
+    height: 4rem;
+  }
+  .topCity > h5{
+    font-size: 1rem;
+  }
+  .searchBox{
+    margin-top: 5vh;
+  }
+}
+@media screen and (max-width : 420px){
+  .self{
+    flex-direction: column;
+    margin-top : 12rem;
+    padding: 0 0.5rem;
+
+  }
+  .searchBox{
+    margin-top: 5vh;
+  }
+}

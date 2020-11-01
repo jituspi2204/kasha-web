@@ -1,0 +1,178 @@
+.self {
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+  margin: 0;
+  background:  url('../../assets/img/bgp-2.jpg');
+  background-size: cover;
+}
+.searchField {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.searchField > div {
+  width: 20%;
+  margin-right: 0px;
+  display: block;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0;
+  height: auto;
+  margin-bottom: 0px;
+}
+.fields > h2{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.searchField input {
+  width: 100%;
+  margin-right: 0px;
+  display: block;
+  font-weight: 500;
+  font-size: 1.8rem;
+  height: 5rem !important;
+  border-radius: none !important;
+  position: relative;
+}
+/* .searchField  input:focus:valid{
+    border-bottom: 2px solid rgb(31, 185, 0);
+    
+}
+.searchField  input:invalid{
+    border-bottom: 2px solid rgb(243, 47, 47);
+} */
+.fields > h2{
+  color:  rgb(255, 136, 0);
+}
+.searchField label {
+  display: block;
+  width: 4rem;
+  height: 5rem;
+  margin: 0;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.searchField > input:hover{
+  transform:scale(1);
+}
+.searchField > input:nth-child(4){
+  padding-left: 1%;
+  padding-top: 1.5rem;
+  background: #fff;
+}
+.searchField > input:nth-child(3){
+  padding-left: 1%;
+  padding-top: 1.5rem;
+  background: #fff;
+}
+
+.searchField > input:hover:not(:last-child) {
+  transform: none;
+}
+
+.searchField > span {
+  color: #111;
+}
+.icon {
+  margin-left: -8rem;
+  display: inline-block;
+  padding-top: 1rem;
+  width: 8rem;
+  height: 3rem;
+  cursor: pointer;
+  fill: #111;
+}
+.self > h1 {
+  display: block;
+  text-align: center;
+  width: 60%;
+  font-size: 3rem;
+  font-family: cursive;
+}
+.self button {
+  height: 5rem;
+  margin: 0;
+  margin-top: 4rem;
+}
+.self button > a {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width : 840px){
+  .self{
+    flex-direction: column;
+    padding: 1rem 5rem;
+  }
+  .searchField > div{
+    width:80%;
+  }
+  .searchField input{
+    width: 100%;
+  }
+  .searchField button{
+    width: 80%;
+  }
+  .searchField > input:nth-child(4){
+    padding-left: 5%;
+  }
+  .searchField > input:nth-child(3){
+    padding-left: 5%;
+  }
+
+  
+}
+@media screen and (max-width : 520px){
+  .self{
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .searchField > div >div{
+    width:95%;
+  }
+  .searchField input{
+    width: 95%;
+  }
+  .searchField button{
+    width: 80%;
+  }
+  .searchField > input:nth-child(4){
+    padding-left: 10%;
+  }
+  .searchField > input:nth-child(3){
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width : 420px){
+  .self{
+    padding-top: 3rem;
+  }
+  .searchField > div >div{
+    width:95%;
+  }
+  .searchField input{
+    width: 95%;
+  }
+  .searchField button{
+    width: 80%;
+  }
+}

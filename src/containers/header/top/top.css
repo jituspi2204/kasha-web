@@ -1,0 +1,103 @@
+.self{
+    width: 100%;
+    max-height: 12rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+}
+
+.selfDark{
+    width: 100%;
+    max-height: 12rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    transition: all 0.4s ease-in-out;
+    background: linear-gradient(120deg, rgba(255, 81, 0),rgba(255, 153, 0));
+}
+.selfDark li > a{
+    color: rgb(255, 255, 255);
+}
+.selfDark li > a:hover{
+    color: rgb(255, 81, 0);
+    border-bottom: 2px solid rgb(255, 81, 0);
+}
+.menuIcon{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.menuIconCross{
+    width: 2rem;
+    cursor: pointer;
+    display: none;
+}
+.menuIcon use{
+    fill: white;
+}
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    
+}
+.displayFixed{
+    transform: translateX(100rem);
+} 
+@media screen and (max-width : 840px){
+    .self{
+        height: 9rem;
+     } 
+     .selfDark{
+         height: 9rem;
+     }
+    .menuIcon{
+        display: block;
+    }
+      .menuIconCross{
+          display:block
+      }
+      .menuIconCross use{
+          fill:#111;
+      }
+    .navContainer{
+        padding: 1rem;
+        margin: 0;
+        position: fixed;
+        background: linear-gradient(120deg, rgba(255, 153, 0), rgba(255, 81, 0));
+        top: 0px;
+        left: -100rem;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+
+    }
+
+}
+@media screen and (max-width : 540px){
+    .self{
+       height: 8rem;
+    } 
+    .selfDark{
+        height: 8rem;
+    }
+}
